@@ -3,7 +3,7 @@ jump @Auto_Remover_Marker
 
 script_name "AxelBlaze"
 
-{$Include Includes/Function.h}
+{$Include Includes/FunctionAddress.h}
 
 int gMobMenu, i, blip
 float x, y
@@ -29,4 +29,4 @@ const z = 20
     end
 return
 
-{$Include Includes/Lable.h}
+{$Include Includes/LableAddress.h}
