@@ -7,7 +7,8 @@ This mod will remove radar markers (target blips) when you arrive at your destin
 Axel Blaze (Porter), Junior_Djjr (Author)
 
 **My Social Media**
-https://sanandreasmixmod.blogspot.com/?m=1
-https://open.spotify.com/user/316kdr7qdazf42s2ga3ocljbnxgu?si=mggHed1wSbGBigGuIfjuFw
-https://youtube.com/@jessepinkman24?si=aYrjgcePagU5dKTs
-https://x.com/AxelBlazeInd?t=wUq4y_ru6PkjSj-xOoi5YA&s=09
+https://tinyurl.com/YoutubeAxelBlaze
+https://tinyurl.com/SpotifyAxelBlaze
+https://tinyurl.com/SanAndreasMixMod
+https://tinyurl.com/GithubAxelBlaze
+https://tinyurl.com/XTwitterAxelBlaze
