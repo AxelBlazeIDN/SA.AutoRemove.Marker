@@ -1,29 +1,29 @@
 {$CLEO .csa}
-jump @Auto_Remover_Marker
+jump @AutoRemoveMarker
 
 script_name "AxelBlaze"
-
-{$Include Includes/Radar_Trace.h}
 
 int gMobMenu, i, blip
 float x, y
 const z = 20
 
-:Auto_Remover_Marker
+{$Include ms_RadarTrace.h}
+
+:AutoRemoveMarker
     while true
         wait 500   
         if 
-             ABMarker() 
+            ABMarker() 
         then
             if 
-                 00FE:   actor $PLAYER_ACTOR sphere 0 in_sphere x y z radius 20.0 20.0 500.0
+                locate_char_any_means_3d $PLAYER_ACTOR sphere 0 in_sphere x y z radius 20.0 20.0 500.0
             then
-                0DD0: gMobMenu = get_label_addr @gMobileMenu // android 
-                0DD1: gMobMenu = get_func_addr_by_cstr_name gMobMenu // android 
+                get_label_pointer gMobMenu = get_label_addr @gMobileMenu
+                find_function_by_name gMobMenu = get_func_addr_by_cstr_name gMobMenu 
                 gMobMenu += 0x48
-                0DD8: blip = read_mem_addr gMobMenu size 4 add_ib 0 // android 
+                read_memory blip = read_mem_addr gMobMenu size 4 add_ib 0
                 remove_blip blip    
-                0DD9: write_mem_addr gMobMenu value 0 size 4 add_ib 0 protect 0 // android   
+                write_mem_addr gMobMenu value 0 size 4 add_ib 0 protect 0 
             end
         end
     end
