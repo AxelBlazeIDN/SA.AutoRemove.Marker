@@ -7,7 +7,7 @@ int gMobMenu, i, blip
 float x, y
 const z = 20
 
-{$Include ms_RadarTrace.h}
+{$Include Includes\ms_RadarTrace.h}
 
 :AutoRemoveMarker
     while true
