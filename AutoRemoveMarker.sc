@@ -3,7 +3,7 @@ jump @AutoRemoveMarker
 
 script_name "AxelBlaze"
 
-int gMobMenu, i, blip
+int gMobMenu, i, blip, AxelBlazexxx
 float x, y
 const z = 20
 
@@ -16,7 +16,7 @@ const z = 20
             ABMarker() 
         then
             if 
-                locate_char_any_means_3d $PLAYER_ACTOR sphere 0 in_sphere x y z radius 20.0 20.0 500.0
+                locate_char_any_means_3d AxelBlazexxx sphere 0 in_sphere x y z radius 20.0 20.0 500.0
             then
                 get_label_pointer gMobMenu = get_label_addr @gMobileMenu
                 find_function_by_name gMobMenu = get_func_addr_by_cstr_name gMobMenu 
