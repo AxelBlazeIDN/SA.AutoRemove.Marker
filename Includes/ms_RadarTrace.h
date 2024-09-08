@@ -1,3 +1,4 @@
+// 0AB6: get_target_blip_coords_to x y z // IF and SET
 :ABMarker
     get_label_pointer gMobMenu = get_label_addr @gMobileMenu   
     find_function_by_name gMobMenu = get_func_addr_by_cstr_name gMobMenu   
