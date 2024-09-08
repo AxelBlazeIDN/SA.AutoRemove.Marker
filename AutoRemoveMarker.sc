@@ -23,7 +23,7 @@ const z = 20
                 gMobMenu += 0x48
                 read_memory blip = read_mem_addr gMobMenu size 4 add_ib 0
                 remove_blip blip    
-                write_mem_addr gMobMenu value 0 size 4 add_ib 0 protect 0 
+                write_memory gMobMenu value 0 size 4 add_ib 0 protect 0 
             end
         end
     end
